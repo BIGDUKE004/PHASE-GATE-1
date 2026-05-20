@@ -6,14 +6,14 @@
 import java.util.Arrays;
 public class ParkingLotSystem{
 
-    public static int [] aCarCanPark(int [] space, int slot){
-int lot = slot - 1;
-int [] array = new int[space.length];
-
-if(space[lot] == 0){
-array[lot] = 1;
+    public static int [] aCarCanPark(int [] space){
+int slot = 0;
+for (int count = 0; count < space.length; count++) {
+        if (space[count] == 0) {
+            slot++;
 }
-return array;
+}
+return slot;
 }
 
 
