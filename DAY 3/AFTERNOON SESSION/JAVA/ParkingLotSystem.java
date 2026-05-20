@@ -6,7 +6,7 @@
 import java.util.Arrays;
 public class ParkingLotSystem{
 
-    public static int aCarCanPark(int [] space, int slot){
+    public static int [] aCarCanPark(int [] space, int slot){
 int lot = slot - 1;
 int [] array = new int[space.length];
 
